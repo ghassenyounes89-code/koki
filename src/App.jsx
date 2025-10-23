@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import "./App.css"
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { storage } from "./firebase"; // استدعاء Firebase Storage
+
 
 // Set backend URL (adjust if needed)
 axios.defaults.baseURL = "https://backend-cars-ghassen.onrender.com"
